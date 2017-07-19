@@ -32,8 +32,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,49 +54,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DodawaniePrzedmiotu.cs">
+    <Compile Include="Klasy\Produkty.cs" />
+    <Compile Include="Okna\DodawaniePrzedmiotu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DodawaniePrzedmiotu.Designer.cs">
+    <Compile Include="Okna\DodawaniePrzedmiotu.Designer.cs">
       <DependentUpon>DodawaniePrzedmiotu.cs</DependentUpon>
     </Compile>
-    <Compile Include="EdycjaPrzedmiotu.cs">
+    <Compile Include="Okna\EdycjaPrzedmiotu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EdycjaPrzedmiotu.Designer.cs">
+    <Compile Include="Okna\EdycjaPrzedmiotu.Designer.cs">
       <DependentUpon>EdycjaPrzedmiotu.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormularzSzablon.cs">
+    <Compile Include="Okna\FormularzSzablon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormularzSzablon.Designer.cs">
+    <Compile Include="Okna\FormularzSzablon.Designer.cs">
       <DependentUpon>FormularzSzablon.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListaPrzedmiotow.cs">
+    <Compile Include="Okna\ListaPrzedmiotow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListaPrzedmiotow.Designer.cs">
+    <Compile Include="Okna\ListaPrzedmiotow.Designer.cs">
       <DependentUpon>ListaPrzedmiotow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Magazyn.cs">
+    <Compile Include="Okna\Magazyn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Magazyn.Designer.cs">
+    <Compile Include="Okna\Magazyn.Designer.cs">
       <DependentUpon>Magazyn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Produkt.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Baza danych\Model1.cs" />
+    <Compile Include="Klasy\Produkt.cs" />
+    <Compile Include="Main\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="DodawaniePrzedmiotu.resx">
+    <Compile Include="_Magazyn_Model1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Magazyn_Model1DataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Okna\DodawaniePrzedmiotu.resx">
       <DependentUpon>DodawaniePrzedmiotu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EdycjaPrzedmiotu.resx">
+    <EmbeddedResource Include="Okna\EdycjaPrzedmiotu.resx">
       <DependentUpon>EdycjaPrzedmiotu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListaPrzedmiotow.resx">
+    <EmbeddedResource Include="Okna\FormularzSzablon.resx">
+      <DependentUpon>FormularzSzablon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Okna\ListaPrzedmiotow.resx">
       <DependentUpon>ListaPrzedmiotow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Magazyn.resx">
+    <EmbeddedResource Include="Okna\Magazyn.resx">
       <DependentUpon>Magazyn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -99,6 +118,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -108,9 +128,24 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="_Magazyn_Model1DataSet.xsc">
+      <DependentUpon>_Magazyn_Model1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Magazyn_Model1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Magazyn_Model1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Magazyn_Model1DataSet.xss">
+      <DependentUpon>_Magazyn_Model1DataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="app.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

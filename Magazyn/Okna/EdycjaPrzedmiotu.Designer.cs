@@ -1,6 +1,6 @@
 ﻿namespace Magazyn
 {
-    partial class DodawaniePrzedmiotu
+    partial class EdycjaPrzedmiotu
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,15 @@
         {
             this.SuspendLayout();
             // 
-            // DodawaniePrzedmiotu
+            // EdycjaPrzedmiotu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(362, 257);
-            this.Name = "DodawaniePrzedmiotu";
-            this.Text = "DodawaniePrzedmiotu";
+            this.ClientSize = new System.Drawing.Size(356, 261);
+            this.Location = new System.Drawing.Point(650, 350);
+            this.Name = "EdycjaPrzedmiotu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Text = "EdycjaPrzedmiotu";
             this.ResumeLayout(false);
 
         }

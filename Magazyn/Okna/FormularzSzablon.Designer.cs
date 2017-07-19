@@ -1,6 +1,6 @@
 ﻿namespace Magazyn
 {
-    partial class EdycjaPrzedmiotu
+    partial class FormularzSzablon
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,15 @@
         {
             this.SuspendLayout();
             // 
-            // EdycjaPrzedmiotu
+            // FormularzSzablon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(356, 261);
-            this.Name = "EdycjaPrzedmiotu";
-            this.Text = "EdycjaPrzedmiotu";
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
+            this.Name = "FormularzSzablon";
+            this.Text = "FormularzSzablon";
             this.ResumeLayout(false);
 
         }
