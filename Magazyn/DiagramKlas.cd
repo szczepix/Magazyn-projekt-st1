@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Magazyn.Produkt">
+    <Position X="18.5" Y="4.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Klasy\Produkt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Magazyn.Produkty">
+    <Position X="15.75" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Klasy\Produkty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Magazyn.Program">
+    <Position X="19" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Main\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Magazyn.Model1">
+    <Position X="18.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Baza danych\Model1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Magazyn.DodawaniePrzedmiotu">
+    <Position X="5.5" Y="3.75" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAgARIAgCAAAACAEAAAAAAAAEAAAAAAAI=</HashCode>
+      <FileName>Okna\DodawaniePrzedmiotu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Magazyn.EdycjaPrzedmiotu">
+    <Position X="11.5" Y="3.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Okna\EdycjaPrzedmiotu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Magazyn.FormularzSzablon">
+    <Position X="6.25" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Okna\FormularzSzablon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Magazyn.ListaPrzedmiotow">
+    <Position X="0.5" Y="3.75" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AQQgAAACACAIACgAAACAAAACAEBABAAAAAFAIAAQAAA=</HashCode>
+      <FileName>Okna\ListaPrzedmiotow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Magazyn.Magazyn">
+    <Position X="15" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Okna\Magazyn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

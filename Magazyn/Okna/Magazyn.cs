@@ -10,10 +10,19 @@ using System.Windows.Forms;
 
 namespace Magazyn
 {
+    /// <summary>
+    /// Główne okno aplikacji
+    /// </summary>
     public partial class Magazyn : Form
     {
+        /// <summary>
+        /// statyczne pole z formularzami, które są utworzone w głównym oknie
+        /// </summary>
         public static FormularzSzablon[] formularzSzablony;
 
+        /// <summary>
+        /// Konstruktor bezparametrowy głównego okna aplikacji
+        /// </summary>
         public Magazyn()
         {
             InitializeComponent();
